@@ -1,10 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Home from './pages/Home';
 
-const App = () => (
-  <div className="main">
-    welcome to react
-  </div>
-);
-
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Home />, document.getElementById('root'));

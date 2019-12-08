@@ -1,5 +1,4 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin');
-const network = require('ip').address();
 const path = require('path');
 
 module.exports = {
@@ -36,12 +35,5 @@ module.exports = {
   resolve: {
     extensions: [".js", ".jsx"]
   },
-  devServer: {
-    contentBase: path.join(__dirname, './'),
-    compress: true,
-    host: network,
-    port: 3000,
-    open: true
-  },
-  mode: 'development'
+  mode: "development"
 }
